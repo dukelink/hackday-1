@@ -5,12 +5,6 @@ var apiRouter = require('./routes/apiRoutes');
 var app = express();
 var cors = require('cors');  
 
-// view engine setup
-//const expressHandlebars = require("express-handlebars");
-//const hbs = expressHandlebars.create({ defaultLayout: "application" });
-//app.engine("handlebars", hbs.engine);
-//app.set('view engine', "handlebars");
-//app.set('views', path.join(__dirname, 'views'));
 app.options('*', cors()); // needed during dev on port 3000 after login to server on port 8080
 
 app.use(express.json()); 
